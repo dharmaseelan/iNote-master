@@ -3,54 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back">
+    android:background="#f5f5f5">
 
     <RadioGroup
         android:id="@+id/rgroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
 
         <RadioButton
             android:id="@+id/rb_Positive"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="onRadioButtonClicked"
             android:text="Positive"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black_overlay"
             android:textStyle="normal" />
 
         <RadioButton
             android:id="@+id/rb_Negative"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="onRadioButtonClicked"
             android:text="Negative"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black_overlay" />
 
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Insert New Note"
+        android:layout_marginTop="33dp"
+        android:text=""
+        android:textAlignment="center"
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="75dp" />
 
     <EditText
         android:id="@+id/editTextNotes"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_above="@+id/rgroup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_alignStart="@+id/editTextCategory"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
         android:ems="10"
+        android:hint="create note"
         android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textSize="16dp"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="178dp" />
 
@@ -58,9 +67,9 @@
         android:id="@+id/button_Save"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/rgroup"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
+        android:layout_marginBottom="63dp"
         android:background="@color/colorPrimary"
         android:text="Save"
         android:textColor="@color/white"
@@ -69,13 +78,17 @@
 
     <EditText
         android:id="@+id/editTextCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_above="@+id/rgroup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="68dp"
+        android:layout_alignStart="@+id/rgroup"
+        android:background="@color/white"
         android:ems="10"
+        android:hint="category"
         android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="120dp" />
 

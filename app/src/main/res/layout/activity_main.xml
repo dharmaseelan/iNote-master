@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back">
+    android:background="#fcfcfc">
 
     <Button
         android:id="@+id/button_newNotes"
@@ -56,12 +56,12 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="100dp"
-        android:layout_height="20dp"
-        android:layout_alignEnd="@+id/button_newNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="28dp"
         android:layout_marginTop="35dp"
-        android:text="Home" />
+        android:text="Home"
+        android:textAlignment="center" />
 
 </RelativeLayout>
